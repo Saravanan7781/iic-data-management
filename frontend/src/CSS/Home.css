@@ -1,0 +1,73 @@
+.homeMain{
+    height: 200dvh;
+    width: 100%;
+    /* border: 5px solid firebrick; */
+}
+
+.imageSection{
+    height: 60vh;
+    width: 100%;
+    border: 3px solid #b22222;
+    margin-top: 9.3vh; 
+   overflow-y: hidden;
+   overflow-x: hidden;
+   position: relative;
+   z-index: -100;
+   scroll-snap-type: x mandatory;
+}
+
+.images{
+    display: flex;
+    
+    
+}
+
+.images img{
+    width: 100%;
+    /* animation: slide 10s linear infinite; 
+    animation-delay: 4s; */
+    scroll-snap-align: start;
+}
+
+
+.images .image1,.images .image3,.images .image2{
+    animation: slide1 9s ease-in-out infinite;
+    animation-delay: 2s;
+    
+}
+
+
+
+
+
+@keyframes slide1 {
+    0%{
+        transform: translateX(0%);
+    }
+
+    50%{
+        transform: translateX(-100%);
+    }
+
+
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+/* .image1{
+    height: 500px;
+    width: 100%;
+    border: 5px solid green;
+    background-size: contain;
+    background-image: url('../Images/AAKRUTI-2023-2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+} */
+
+/* .image2{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url('../Images/thumbs_HackFest-23-Team-Vanguards-of-VR.jpeg');
+} */
